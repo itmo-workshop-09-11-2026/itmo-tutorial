@@ -3,18 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Наш магазин — старт</title>
+  <title>Настольные игры — team07</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
 </head>
 <body>
-  <main>
+  <header>
     <img src="./assets/shop.svg" width="80" height="80" alt="Вывеска магазина">
-    <p class="eyebrow">AI-воркшоп · ИТМО</p>
-    <h1>Здесь будет ваш магазин</h1>
-    <p>Придумайте тему, добавьте каталог и соберите первую корзину.</p>
-    <p id="status" role="status">JavaScript ещё не запущен.</p>
-    <a href="https://github.com/itmo-workshop-09-11-2026/workshop-guide/blob/main/docs/task.md">Открыть задание</a>
+    <p class="eyebrow">Магазин настольных игр · ИТМО, команда 07</p>
+    <h1>Настольные игры</h1>
+    <p>Собирайте вечер: стратегии, кооперативы и игры для компании.</p>
+  </header>
+  <main>
+    <section id="catalog-section" aria-labelledby="catalog-title">
+      <h2 id="catalog-title">Каталог</h2>
+      <ul id="catalog"></ul>
+    </section>
+    <section id="cart-section" aria-labelledby="cart-title">
+      <h2 id="cart-title">Корзина</h2>
+      <p id="cart-empty">Корзина пуста</p>
+      <ul id="cart"></ul>
+      <p class="total">Итого: <span id="total">0 ₽</span></p>
+    </section>
   </main>
 </body>
 </html>
